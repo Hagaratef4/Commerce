@@ -4,7 +4,7 @@ import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 
 import ProductsCard from '../ProductsCard/ProductsCard';
-import Loader from '../../Components/loader';
+import Loader from '../../Components/Loader';
 import ErrorPage from '../ErrorPage/ErrorPage';
 
 function Category() {
