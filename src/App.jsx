@@ -8,7 +8,7 @@ import Categories from './Pages/Categories/Categories';
 import Cart from './Pages/Cart/Cart';
 import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
-import ProtectedRoutes from './Components/Protected/protectedRoutes';
+import ProtectedRoutes from './Components/Protected/ProtectedRoutes';
 import { Toaster } from 'react-hot-toast';
 import Orders from './Pages/Orders/Orders';
 
