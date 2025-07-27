@@ -24,7 +24,7 @@ function Home() {
                     {/* Big Image (takes full height on large screens) */}
                     <div className="md:w-2/3 h-full relative overflow-hidden">
                         <img
-                        src="../../../public/images/img1.jpg"
+                        src="/images/img1.jpg"
                         alt=""
                         className="w-full h-full md:h-[480px] lg:h-[660px] xl:h-[788px] object-cover rounded-xl"
                         />
@@ -48,14 +48,14 @@ function Home() {
                     <div className="md:w-1/3 flex flex-row md:flex-col gap-4">
                         <div className="w-1/2 md:w-full">
                         <img
-                            src="../../../public/images/img3.jpg"
+                            src="/images/img3.jpg"
                             alt=""
                             className="w-full h-full object-cover rounded-xl"
                         />
                         </div>
                         <div className="w-1/2 md:w-full">
                         <img
-                            src="../../../public/images/img4.jpg"
+                            src="/images/img4.jpg"
                             alt=""
                             className="w-full h-full object-cover rounded-xl"
                         />

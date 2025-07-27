@@ -1,10 +1,10 @@
 import React from 'react';
-import amazon from '../../../public/images/amazon-pay.png'
-import american from '../../../public/images/American-Express-Color.png'
-import paypal from '../../../public/images/paypal.png'
-import masterCard from '../../../public/images/mastercard.webp'
-import applePlay from '../../../public/images/get-apple-store.png'
-import googlePlay from '../../../public/images/get-google-play.png'
+import amazon from '/images/amazon-pay.png'
+import american from '/images/American-Express-Color.png'
+import paypal from '/images/paypal.png'
+import masterCard from '/images/mastercard.webp'
+import applePlay from '/images/get-apple-store.png'
+import googlePlay from '/images/get-google-play.png'
 function Footer() {
     return (
         <footer className='bg-mainLight p-15 dark:bg-gray-600'>

@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from 'react';
 import { cardContext } from '../../Context/CartContext';
 import CartItems from '../../Components/cartItems/CartItems';
-import logo from '../../../public/images/favicon.png'
+import logo from '/images/favicon.png'
 import CheckOut from '../../Components/CheckOut/CheckOut';
 import { Link } from 'react-router-dom';
 
