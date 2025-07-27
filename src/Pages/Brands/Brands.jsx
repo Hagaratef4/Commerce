@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Loader from '../../Components/loader';
+import Loader from '../../Components/Loader';
 import axios from 'axios';
 import BrandCard from '../../Components/BrandCard/BrandCard';
 import 'animate.css'

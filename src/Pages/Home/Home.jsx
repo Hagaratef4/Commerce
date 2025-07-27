@@ -1,7 +1,7 @@
 import React from 'react';
 import ProductsCard from '../../Components/ProductsCard/ProductsCard';
 import axios from 'axios';
-import Loader from '../../Components/loader';
+import Loader from '../../Components/Loader';
 import { useQuery } from '@tanstack/react-query';
 import 'animate.css'
 import { Navigate } from 'react-router-dom';

@@ -2,7 +2,7 @@ import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import React from 'react';
-import Loader from '../../Components/loader';
+import Loader from '../../Components/Loader';
 import OrderCard from '../../Components/OrderCard/OrderCard';
 
 function Orders() {
