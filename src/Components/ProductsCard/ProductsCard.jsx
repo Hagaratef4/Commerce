@@ -13,34 +13,38 @@ function ProductsCard({item}) {
     <>
         <div className='animate__animated animate__fadeInUp shadow-lg rounded-2xl overflow-hidden group'>
             <div className='overflow-hidden relative '>
-                <img src={item.imageCover} alt={item.title} className='p-2' />
-                <div className="layer absolute w-full min-h-full opacity-0  group-hover:opacity-100 group-hover:top-0 text-white top-100 flex gap-3 justify-center items-center">
+                <img src={item.imageCover} alt={item.title} className='p-2 rounded-xl' />
+                <div className="layer absolute w-full min-h-full flex gap-3 top-0  justify-center items-end pb-7 lg:opacity-0  lg:group-hover:opacity-100 lg:group-hover:top-0 text-white lg:top-100 lg:justify-center lg:items-center">
+                    
                     <div
                     onClick={()=>{
                         addProductToWishList(item._id)
                     }
                     }
-                    className="heart  bg-green-300 p-2.5 rounded-4xl hover:bg-green-700 opacity-0 group-hover:opacity-100 translate-y-20 group-hover:translate-y-0 transition-all ease-in-out duration-300 delay-[100ms] ">
+                    className="heart  bg-green-300 p-2.5 rounded-4xl hover:bg-green-700 lg:opacity-0 lg:group-hover:opacity-100 lg:translate-y-20 lg:group-hover:translate-y-0 lg:transition-all lg:ease-in-out duration-300 delay-[100ms] ">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5 has-checked:text-red-600">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
                             </svg>
                     </div>
+                    
                     <div
                     onClick={()=>{
                         addProductToCard(item._id)
                     }}
-                    className="cart bg-green-300 hover:bg-green-700 p-2.5 rounded-4xl opacity-0 group-hover:opacity-100 translate-y-20 group-hover:translate-y-0   transition-all ease-in-out duration-500 delay-[300ms] ">
+                    className="cart bg-green-300 p-2.5 rounded-4xl hover:bg-green-700 lg:opacity-0 lg:group-hover:opacity-100 lg:translate-y-20 lg:group-hover:translate-y-0 lg:transition-all lg:ease-in-out duration-300 delay-[300ms]">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
                         </svg>
                     </div>
-                    <Link to={`/productsDetailes/${item.id}`} className="eye bg-green-300 hover:bg-green-700 p-2.5 rounded-4xl opacity-0 group-hover:opacity-100 translate-y-20 group-hover:translate-y-0  transition-all ease-in-out duration-1000 delay-[700ms]">
+                    
+                    <Link to={`/productsDetailes/${item.id}`} className="eye bg-green-300 p-2.5 rounded-4xl hover:bg-green-700 lg:opacity-0 lg:group-hover:opacity-100 lg:translate-y-20 lg:group-hover:translate-y-0 lg:transition-all lg:ease-in-out duration-300 delay-[500ms]">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
                             <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                         </svg>
                     </Link>
                 </div> 
+
             </div>
             <div className="p-5 space-y-6 ">
                 <div className="space-y-1.5">
