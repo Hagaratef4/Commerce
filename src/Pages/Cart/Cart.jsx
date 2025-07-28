@@ -58,7 +58,7 @@ function Cart() {
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
                                 </svg>
                         </Link>
-                    <h2 className="text-2xl font-bold text-darkPrimary dark:text-white text-md">Shop Cart</h2>
+                    <h2 className="text-sm md:text-2xl font-bold text-darkPrimary dark:text-white">Shop Cart</h2>
                     <img src={logo} alt="logo" className='w-10' />
                     </div>
                 </div> 
@@ -79,7 +79,7 @@ function Cart() {
             <div className="bg-white flex items-center justify-center p-6 dark:bg-gray-500">
             <div className="xl:min-w-6xl xl:w-auto w-full bg-mainLight rounded-xl shadow-lg p-6 dark:bg-gray-300">
                 <div className="flex justify-between items-center">
-                    <div className="flex items-center mb-8 gap-2">
+                    <div className="flex items-center justify-center mb-8 gap-2">
                         <Link
                             to={'/'}
                             className=" rounded-full p-1.5 cursor-pointer ease-in  my-3 mx-5 hover:bg-darkPrimary bg-primary text-center text-white">
@@ -87,12 +87,12 @@ function Cart() {
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
                                 </svg>
                         </Link>
-                    <h2 className="text-2xl font-bold text-darkPrimary">Shop Cart</h2>
+                    <h2 className="text-md md:text-2xl font-bold text-darkPrimary">Shop Cart</h2>
                     <img src={logo} alt="logo" className='w-10' />
                     </div>
-                    <div className="flex gap-2 items-center">
-                        <p className="flex justify-between text-lg font-bold text-darkPrimary">Total Price:</p>
-                        <p className='text-primary text-lg font-bold'>{cart?.totalCartPrice} EGP</p>
+                    <div className="flex flex-col md:flex-row md:gap-2 items-center">
+                        <p className="flex text-sm justify-between md:text-lg font-bold text-darkPrimary">Total Price:</p>
+                        <p className='text-primary text-sm md:text-lg font-bold'>{cart?.totalCartPrice} EGP</p>
                     </div>
                 </div> 
 

@@ -21,7 +21,6 @@ function Home() {
                 { isLoading ? <Loader/> :
                 <div>
                     <div className="container xl:px-44 px-4 flex flex-col md:flex-row items-stretch gap-4">
-                    {/* Big Image (takes full height on large screens) */}
                     <div className="md:w-2/3 h-full relative overflow-hidden">
                         <img
                         src="/images/img1.jpg"
@@ -63,7 +62,7 @@ function Home() {
                     </div>
                 </div>
 
-                <h2 id='product-section' className='wrapper  font-extrabold text-3xl relative text-gray-800 text-center my-9 dark:text-white'> Shope now by popular products</h2>
+                <h2 id='product-section' className='wrapper font-extrabold text-3xl relative text-gray-800 text-center my-9 dark:text-white'> Shope now by popular products</h2>
                     <div className="animate__animated animate__fadeInUp grid gap-4 mx-15 md:mx-8 xl:mx-44 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                     {data.data.data.map((item) => (
                         <div

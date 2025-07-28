@@ -23,14 +23,15 @@ function CartItems({item}) {
     }
 
     return (
-        <div className="xl:max-w-6xl flex items-center gap-4 p-4 bg-gray-50 rounded-lg dark:bg-gray-400">
+        <div className="xl:max-w-6xl flex flex-col md:flex-row  md:items-center gap-4 p-4 bg-gray-50 rounded-lg dark:bg-gray-400">
                     <img src={item?.product.imageCover} alt="Product" className="w-20 h-20 object-cover rounded-md" />
-                    <div className="flex-1 space-y-2">
-                    <h3 className="font-semibold text-darkPrimary dark:text-green-300">{item?.product.title}</h3>
-                    <p className="text-sm text-gray-600 dark:text-slate-700">Price: EGP {item.price}</p>
-                    <p className="text-sm text-gray-600 dark:text-slate-700">{item.product.category?.name} | {item?.product.brand?.name}</p>
+                    <div className="flex-1 space-y-2 ">
+                        <h3 className="font-semibold text-darkPrimary dark:text-green-300">{item?.product.title}</h3>
+                        <p className="text-sm text-gray-600 dark:text-slate-700">Price: EGP {item.price}</p>
+                        <p className="text-sm text-gray-600 dark:text-slate-700">{item.product.category?.name} | {item?.product.brand?.name}</p>
                     </div>
-                    <div className="flex items-center gap-3">
+                    <div className=" flex gap-5 items-center justify-center ">
+                        <div className="flex items-center gap-3">
                     <button
                     disabled = {disableBtn}
                     onClick={() => {
@@ -57,15 +58,16 @@ function CartItems({item}) {
                     className="disabled:cursor-not-allowed text-gray-500 cursor-pointer hover:text-green-500 text-2xl">+</button>
                     </div>
                     <p className="font-semibold text-gray-900 w-20 text-right dark:text-white/70">EGP {item?.price * count}</p>
-                    <button className="text-gray-400 hover:text-red-500 text-2xl dark:text-black/70"
-                    onClick={()=>{
-                        deleteProductFromCard(item?.product._id),
-                        lastItem()
-                    }}>
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                    </button>
+                        <button className="text-gray-400 hover:text-red-500 text-2xl dark:text-black/70"
+                        onClick={()=>{
+                            deleteProductFromCard(item?.product._id),
+                            lastItem()
+                        }}>
+                            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
         </div>
     );
 }

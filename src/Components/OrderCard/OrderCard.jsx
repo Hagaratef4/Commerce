@@ -26,7 +26,7 @@ function OrderCard({item}) {
                         {item?.cartItems.map((cartItem)=>(
                             <div className="grid grid-cols-2 gap-4">
                                     <div className="">
-                                    <img src={cartItem.product.imageCover} alt={cartItem.product.title} className='h-full' />
+                                    <img src={cartItem.product.imageCover} alt={cartItem.product.title} className='lg:h-full' />
                                     </div>
                                     <div className="m-3 space-y-1.5">
                                         <p className='text-darkPrimary capitalize font-medium dark:text-green-200'>{cartItem.product.title.split(' ',3).join(' ')}</p>

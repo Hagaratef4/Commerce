@@ -23,10 +23,12 @@ function Footer() {
                 <div className='lg:flex lg:justify-between lg:mx-4 border-t-1 border-b-1 border-gray-300 p-4 mt-8'>
                     <div className='flex items-center gap-5 lg:gap-2 mb-6'>
                         <h3 className='capitalize text-sm  dark:text-white'>payment partners:</h3>
-                        <img src={amazon} alt="amazon"  className='w-18'/>
-                        <img src={american} alt="american" className='w-18' />
-                        <img src={masterCard} alt="masterCard" className='w-18' />
-                        <img src={paypal} alt="paypal" className='w-18' />
+                        <div className="grid grid-cols-2 items-center gap-2 md:grid-cols-4">
+                            <img src={amazon} alt="amazon"  className='w-18'/>
+                            <img src={american} alt="american" className='w-18' />
+                            <img src={masterCard} alt="masterCard" className='w-18' />
+                            <img src={paypal} alt="paypal" className='w-18' />
+                        </div>
                     </div>
 
                     <div className='flex items-center gap-2'>
