@@ -15,7 +15,7 @@ function WishList() {
     if(loading){
             return (
                 <div className="bg-white flex items-center justify-center p-6 dark:bg-gray-500">
-                    <div className="xl:min-w-6xl xl:w-auto w-full bg-gray-200 rounded-xl p-6 bg-gray-400">
+                    <div className="xl:min-w-6xl xl:w-auto w-full bg-gray-200 rounded-xl p-6 dark:bg-gray-400">
                         <div className="flex gap-2 items-center">
                             <div className="rounded-full p-1.5 bg-gray-300 animate-pulse my-3 mx-5 w-8 h-8"></div>
                             <div className="h-6 w-48 bg-gray-300 animate-pulse"></div>
